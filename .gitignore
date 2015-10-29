@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/bower,osx
 
+token.js
+
 ### Bower ###
 bower_components
 .bower-cache

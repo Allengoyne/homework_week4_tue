@@ -1,0 +1,45 @@
+@import "../bower_components/normalize-css/normalize.css";
+@import  "../bower_components/bourbon/app/assets/stylesheets/bourbon.scss";
+$visual-grid: true;
+@import "../bower_components/neat/app/assets/stylesheets/neat.scss";
+
+.wrapper {
+  @include outer-container;
+  margin: 0 auto;
+}
+
+header {
+  @include outer-container;
+  background: #F5F5F5;
+  border-bottom: 1px solid #DDDDDD;
+  padding: 15px;
+  .logo {
+    @include span-columns(.5);
+  }
+
+  .search input {
+    @include span-columns(3);
+    padding: 3px;
+    font-size: 11px;
+    color: #AAAAAA;
+    border-radius: 2px;
+    outline: none;
+    margin-right: 5px;
+  }
+  nav {
+    a {
+      text-decoration: none;
+      color: #000;
+      padding: 5px;
+      font-size: 12px;
+      font-weight: bolder;
+    }
+  }
+}
+header .search input:last-child {
+    margin-right: 10px;
+}
+.avatar {
+  border: 1px transparent;
+  border-radius: 5px;
+}
