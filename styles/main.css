@@ -42,7 +42,8 @@ header {
   margin-right: auto;
   background: #F5F5F5;
   border-bottom: 1px solid #DDDDDD;
-  padding: 15px; }
+  padding: 10px;
+  margin-bottom: 25px; }
   header::after {
     clear: both;
     content: "";
@@ -77,6 +78,52 @@ header {
 header .search input:last-child {
   margin-right: 10px; }
 
+nav.gitNav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  nav.gitNav:last-child {
+    margin-right: 0; }
+
+.iconNav {
+  float: right;
+  margin-bottom: 10px; }
+
+.octicon-bell {
+  font-size: 15px;
+  padding: 5px; }
+
+.octicon-plus {
+  font-size: 15px; }
+
+.octicon-triangle-down {
+  font-size: 5px; }
+
+#avatar {
+  border-radius: 5px;
+  margin-bottom: 0; }
+
+.sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 18.96686%; }
+  .sidebar:last-child {
+    margin-right: 0; }
+
 .avatar {
   border: 1px transparent;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: 100%; }
+
+.repoName {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  float: right;
+  padding: 15px;
+  border-bottom: 1px solid #DDDDDD; }
+  .repoName:last-child {
+    margin-right: 0; }

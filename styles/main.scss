@@ -8,15 +8,16 @@ $visual-grid: true;
   margin: 0 auto;
 }
 
+// Header Elements
 header {
   @include outer-container;
   background: #F5F5F5;
   border-bottom: 1px solid #DDDDDD;
-  padding: 15px;
+  padding: 10px;
+    margin-bottom: 25px;
   .logo {
     @include span-columns(.5);
   }
-
   .search input {
     @include span-columns(3);
     padding: 3px;
@@ -39,7 +40,50 @@ header {
 header .search input:last-child {
     margin-right: 10px;
 }
+
+nav.gitNav {
+  @include span-columns(7);
+}
+.iconNav {
+  // @include span-columns(3);
+  float: right;
+  margin-bottom: 10px;
+}
+.octicon-bell, {
+  font-size: 15px;
+  padding: 5px;
+}
+.octicon-plus {
+  font-size: 15px;
+}
+.octicon-triangle-down {
+  font-size: 5px;
+  // margin: 0;
+}
+#avatar {
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+// Sidebar
+
+.sidebar {
+  @include span-columns(2.5);
+}
+
 .avatar {
   border: 1px transparent;
   border-radius: 5px;
+  width: 100%;
+  // @include span-columns(2.5);
+}
+
+
+// Repo List
+
+.repoName {
+  @include span-columns(9);
+  float: right;
+  padding: 15px;
+  border-bottom: 1px solid #DDDDDD;
 }
