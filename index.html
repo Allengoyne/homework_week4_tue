@@ -30,36 +30,47 @@
              width="20">
              <span class="octicon octicon-triangle-down"></span>
 
-
-
-
         </nav>
-
 
     </header>
 
     <main>
-      <section>
-<aside class="sidebar">
-  <img class="avatar" src="" alt="" />
-  <section class="stats">
-    <section class="acctName"></section>
-    <section class="meta"></section>
-    <section class="connections"></section>
-    <section class="organizations">Organizations</section>
-
-  </section>
-</aside>
-
-        <section class="repos"></section>
-
-      </section>
+      <aside class="sidebar"></aside>
+      <section class="repos"></section>
     </main>
 
+    <script type="text/template" id="reposAll">
+      <div class="repoName"></div>
+      <div class="repoUpdate"></div>
+      <div class="repoForks"></div>
+      <div class="repoLanguage"></div>
+      <div class="repoStars"></div>
+
+    </script>
 
 
+    <script type="text/template" id="details">
+      <img class="avatar" src="<%= avatar_url %>" alt="" />
+      <section class="stats">
+        <section class="userName"><%= name %></section>
+        <section class="acctName"><%= login %></section>
+
+        <section class="meta"><%= location %></section>
+        <section class="meta"><%= blog %></section>
+        <section class="meta">Joined on <%= created_at %></section>
+
+        <section class="connections">Followers <%= followers %></section>
+        <!-- <section class="connections">Starred<%= starred_url %></section> -->
+        <section class="connections">Following <%= following %></section>
+
+        <!-- <section class="organizations"><%= organizations_url %></section> -->
+      </section>
+    </script>
+
+    <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="token.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
     <script src="main.js"></script>
 
   </div>
